@@ -1,6 +1,6 @@
-## Welcome to Real Dev Squad's Website
+# Welcome to Real Dev Squad's Website
 
-This repository contains the welcome page for new members of Real Dev Squad. It provides an overview of the community, guidelines, and resources to help you get started.
+This repository contains the welcome page for new members of Real Dev Squad. It provides an overview of the community, guidelines, and essential resources to help you get started.
 
 [![Better Uptime Badge](https://betteruptime.com/status-badges/v1/monitor/5hux.svg)](https://betteruptime.com/?utm_source=status_badge)
 
