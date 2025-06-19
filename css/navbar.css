@@ -10,15 +10,23 @@
 }
 
 nav {
-  font-family: 'roboto';
-  font-weight: 700;
+  top: 0;
+  z-index: 1000;
+  background-color: #1d1283;
+  padding: 0;
+  margin: 0;
 }
-
 .nav-menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style-type: none;
-  overflow: hidden;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 nav li {
