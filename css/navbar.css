@@ -12,6 +12,7 @@
 nav {
   font-family: 'roboto';
   font-weight: 700;
+  position:sticky;
 }
 
 .nav-menu {
