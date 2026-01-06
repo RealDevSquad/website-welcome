@@ -32,22 +32,22 @@ document.getElementById('signout-option').addEventListener('click', () => {
 
 const myStatusButton = document.getElementById('my-status');
 myStatusButton.addEventListener('click', () => {
-  window.location.href = MY_BASE_URL;
+  window.location.href = 'https://status.realdevsquad.com';
 });
 
 const myProfileButton = document.getElementById('my-profile');
 myProfileButton.addEventListener('click', () => {
-  window.location.href = `${MY_BASE_URL}/profile`;
+  window.location.href = 'https://status.realdevsquad.com/profile';
 });
 
 const myTasksButton = document.getElementById('my-tasks');
 myTasksButton.addEventListener('click', () => {
-  window.location.href = `${MY_BASE_URL}/tasks`;
+  window.location.href = 'https://status.realdevsquad.com/tasks';
 });
 
 const myIdentityButton = document.getElementById('my-identity');
 myIdentityButton.addEventListener('click', () => {
-  window.location.href = `${MY_BASE_URL}/identity`;
+  window.location.href = 'https://www.realdevsquad.com/identity';
 });
 
 const mainSiteButton = document.getElementById('main-site');
