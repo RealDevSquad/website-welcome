@@ -31,29 +31,39 @@ document.getElementById('signout-option').addEventListener('click', () => {
 });
 
 const myStatusButton = document.getElementById('my-status');
-myStatusButton.addEventListener('click', () => {
-  window.location.href = `${MAIN_SITE}/status`;
-});
+if (myStatusButton) {
+  myStatusButton.addEventListener('click', () => {
+    window.location.href = `${MAIN_SITE}/status`;
+  });
+}
 
 const myProfileButton = document.getElementById('my-profile');
-myProfileButton.addEventListener('click', () => {
-  window.location.href = `${MAIN_SITE}/profile`;
-});
+if (myProfileButton) {
+  myProfileButton.addEventListener('click', () => {
+    window.location.href = `${MAIN_SITE}/profile`;
+  });
+}
 
 const myTasksButton = document.getElementById('my-tasks');
-myTasksButton.addEventListener('click', () => {
-  window.location.href = `${STATUS_BASE_URL}/tasks`;
-});
+if (myTasksButton) {
+  myTasksButton.addEventListener('click', () => {
+    window.location.href = `${STATUS_BASE_URL}/tasks`;
+  });
+}
 
 const myIdentityButton = document.getElementById('my-identity');
-myIdentityButton.addEventListener('click', () => {
-  window.location.href = `${MAIN_SITE}/identity`;
-});
+if (myIdentityButton) {
+  myIdentityButton.addEventListener('click', () => {
+    window.location.href = `${MAIN_SITE}/identity`;
+  });
+}
 
 const mainSiteButton = document.getElementById('main-site');
-mainSiteButton.addEventListener('click', () => {
-  window.location.href = MAIN_SITE;
-});
+if (mainSiteButton) {
+  mainSiteButton.addEventListener('click', () => {
+    window.location.href = MAIN_SITE;
+  });
+}
 
 document.querySelectorAll('.user-greet').forEach((greet) => {
   greet.addEventListener('click', () => {
