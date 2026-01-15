@@ -20,7 +20,7 @@
 }
 
 body {
-  font: 16px 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   position: relative;
   background-color: var(--color-bg);
 }

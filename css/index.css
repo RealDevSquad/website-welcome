@@ -20,7 +20,7 @@
 
 body {
   box-sizing: border-box;
-  font-family: 'raleway';
+  font-family: 'Roboto', sans-serif;
   background-color: var(--color-bg);
 }
 
@@ -263,6 +263,7 @@ iframe {
 footer {
   text-align: center;
   padding: 20px;
+  font: 16px 'Roboto', sans-serif;
 }
 
 @media (max-width: 1250px) {
