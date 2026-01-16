@@ -50,7 +50,9 @@ const fetchData = () => {
         throw new Error(res.error);
       }
       if (res.incompleteUserDetails) {
-        return window.location.replace('https://my.realdevsquad.com/signup');
+        return window.location.replace(
+          'https://www.realdevsquad.com/new-signup',
+        );
       }
       setUserGreeting(username, first_name, picture.url);
     })
