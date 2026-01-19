@@ -1,36 +1,66 @@
-[![Better Uptime Badge](https://betteruptime.com/status-badges/v1/monitor/5hux.svg)](https://betteruptime.com/?utm_source=status_badge)
+# Real Dev Squad Welcome Site
 
-# Welcome Site
+Welcome to the Real Dev Squad Welcome Site, the gateway to our vibrant and inclusive community of developers, learners, and contributors. This project is the first step in your journey to becoming a part of our thriving ecosystem.
 
-https://welcome.realdevsquad.com/
+Explore and Contribute
+Our Welcome Site provides a central hub for all things Real Dev Squad, offering a range of resources and opportunities:
 
-# Want to contribute or Learn how to?
+'Learn': Discover valuable resources, tutorials, and educational content curated by our community members. Whether you're a seasoned developer or just starting, there's something here for everyone.
 
-Read about our Contributing Process: [Here](CONTRIBUTING.md)
+'Contribute': Join our community of passionate developers and contribute to open-source projects that make a difference. We welcome contributors of all levels and backgrounds.
 
-# Frequently Asked Questions
+'Connect': Engage with fellow developers and learners on our Discord community. Share knowledge, seek help, and collaborate on exciting projects.
 
-https://welcome.realdevsquad.com/faq
+'Stay Informed': Access our Frequently Asked Questions (FAQ) section for quick answers to common queries. We've got you covered, from project specifics to community guidelines.
 
-# Help with Discord
+- **Website:** [https://welcome.realdevsquad.com/](https://welcome.realdevsquad.com/)
 
-https://welcome.realdevsquad.com/discord
+## Table of Contents
+- [Contributing](#contributing)
+- [Frequently Asked Questions](#frequently-asked-questions)
+- [Getting Help on Discord](#getting-help-on-discord)
+- [Code of Conduct](#code-of-conduct)
+- [Running the Project](#running-the-project)
+- [Scripts Used in the Project](#scripts-used-in-the-project)
+- [Troubleshooting CORS Errors](#troubleshooting-cors-errors)
 
-# Code of conduct at RDS
+## Contributing
 
-https://welcome.realdevsquad.com/code-of-conduct.html
+If you're interested in contributing to this project or learning how to contribute, please read our [Contributing Process](https://welcome.realdevsquad.com/contributing).
 
-# Running the project
+## Frequently Asked Questions
 
-- Kindly refer this before you start : https://github.com/Real-Dev-Squad/website-welcome/blob/develop/CONTRIBUTING.md
+Got questions about Real Dev Squad or this project? Check out our [FAQ](https://welcome.realdevsquad.com/faq) for answers.
 
-- Run `npm install` after opening the repository in your editor. This will install all the necessary packages for the project which are mentioned in the `package.json` file of the project.
+## Getting Help on Discord
 
-# Scripts used in project
+For real-time communication and support, join our Discord community. Get assistance, collaborate with others, and stay updated. [Join Discord](https://welcome.realdevsquad.com/discord)
 
-- `npm run check` checks the formatting of all the files in the project. This script runs in a pre-commit hook. It will warn about the improper formatting present in the file.
-- `npm run fix` can be run for fixing the formatting before commiting your changes or to solve the formatting errors one may get while commiting the changes.
+## Code of Conduct
 
-#### Note ⚠️: Please make sure to run `npm run fix` before committing your files. Otherwise if there are any formatting issues in your code, GitHub checks will fail on your PR (pull request). You will then have to run the `fix` script to fix those issues and push the formatted code again and now the checks should pass.
+Please review our [Code of Conduct](https://welcome.realdevsquad.com/code-of-conduct.html) to understand the expected behavior within the Real Dev Squad community.
 
-### Note: If you get CORS error for API calls during development, please consider reading [this](https://github.com/Real-Dev-Squad/website-code-docs/tree/main/docs/dev/https-dev-url-cors) documentation.
+## Running the Project
+
+Before you start contributing, make sure to follow these steps:
+
+1. Clone this repository to your local machine.
+2. Open the repository in your code editor.
+3. Run the following command to install all necessary packages:
+
+   ```sh
+   npm install
+
+
+Refer to the [Contributing Guide](https://github.com/Real-Dev-Squad/website-welcome/blob/develop/CONTRIBUTING.md) for detailed instructions on contributing to the project.
+Scripts Used in the Project
+We have provided some useful scripts for project development:
+
+npm run check: Checks the formatting of all files in the project. This script runs automatically in a pre-commit hook to warn about improper formatting.
+
+npm run fix: Can be run to fix formatting issues before committing your changes or to resolve formatting errors that may occur during commits. Make sure to run this script before committing to ensure that GitHub checks pass.
+
+Troubleshooting CORS Errors
+If you encounter CORS (Cross-Origin Resource Sharing) errors for API calls during development, please refer to our documentation for guidance on resolving these issues.
+
+Feel free to explore the [Welcome Site](https://welcome.realdevsquad.com/) and contribute to our community. We value your contributions and look forward to collaborating with you!
