@@ -1,4 +1,9 @@
-const setUserGreeting = (username, firstName, userProfilePicture) => {
+const defaultUserProfilePicture = '../img/icons/user-default-icon.png';
+const setUserGreeting = (
+  username,
+  firstName,
+  userProfilePicture = defaultUserProfilePicture,
+) => {
   if (username) {
     const userLoginEl = document.querySelectorAll('.btn-login');
 
@@ -6,7 +11,9 @@ const setUserGreeting = (username, firstName, userProfilePicture) => {
     const msgGreetMsgEl = document.querySelectorAll('.user-greet-msg');
     const userImgEl = document.querySelectorAll('.user-profile-pic');
 
-    const greetMsg = `Hello, ${firstName}!`;
+    const capitalisedName = firstName[0].toUpperCase() + firstName.slice(1);
+    const greetMsg = `Hello, ${capitalisedName}!`;
+    console.log(greetMsg);
     msgGreetMsgEl.forEach((element) => {
       element.innerText = greetMsg;
     });
@@ -54,7 +61,7 @@ const fetchData = () => {
           'https://www.realdevsquad.com/new-signup',
         );
       }
-      setUserGreeting(username, first_name, picture.url);
+      setUserGreeting(username, first_name, picture?.url);
     })
     .catch((error) => {
       hideSkeleton();
