@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#e30062" />
-
     <title>Welcome to Real Dev Squad</title>
 
     <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico" />
@@ -26,137 +25,122 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" type="text/css" href="./css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
   </head>
 
   <body>
+    <header>
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="nav-menu">
+          <li>
+            <a href="https://www.realdevsquad.com/" class="logo-link">
+              <img
+                class="rds-logo"
+                src="img/logos/RDS-logo.png"
+                alt="RDS_Logo"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              class="home-tab nav-element"
+              href="https://www.realdevsquad.com/"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              class="nav-element active-tab"
+              href="https://welcome.realdevsquad.com/"
+            >
+              Welcome
+            </a>
+          </li>
+          <li>
+            <a
+              class="nav-element"
+              href="https://www.realdevsquad.com/events.html"
+            >
+              Events
+            </a>
+          </li>
+          <li>
+            <a class="nav-element" href="https://members.realdevsquad.com/">
+              Members
+            </a>
+          </li>
+          <li>
+            <a class="nav-element" href="https://status.realdevsquad.com/">
+              Status
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-login-li">
+        <div class="nav-login">
+          <a
+            class="btn-login"
+            href="https://github.com/login/oauth/authorize?client_id=23c78f66ab7964e5ef97"
+          >
+            <div class="skeleton-holder">
+              <div class="skeleton-rectangle" id="skeleton-rectangle"></div>
+              <div class="skeleton-circle" id="skeleton-circle"></div>
+            </div>
+            <button class="btn-login-text hidden">
+              Sign In With GitHub
+              <img
+                src="img/icons/github-logo.png"
+                alt="GitHub Icon"
+                height="15px"
+                width="15px"
+              />
+            </button>
+          </a>
+          <div class="user-greet">
+            <div class="user-greet-msg">Hello, User!</div>
+            <img class="user-profile-pic" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ✅ Page content -->
     <div class="dropdown hide">
       <ul class="dropdown-list">
         <li class="dropdown-link">
-          <button class="dropdown-link dropdown-item-btn" id="main-site">
-            Home
-          </button>
+          <button class="dropdown-item-btn" id="main-site">Home</button>
         </li>
         <li class="dropdown-link">
-          <button class="dropdown-link dropdown-item-btn" id="my-status">
-            Status
-          </button>
+          <button class="dropdown-item-btn" id="my-status">Status</button>
         </li>
         <li class="dropdown-link">
-          <button class="dropdown-link dropdown-item-btn" id="my-profile">
-            Profile
-          </button>
+          <button class="dropdown-item-btn" id="my-profile">Profile</button>
         </li>
         <li class="dropdown-link">
-          <button class="dropdown-link dropdown-item-btn" id="my-tasks">
-            Tasks
-          </button>
+          <button class="dropdown-item-btn" id="my-tasks">Tasks</button>
         </li>
         <li class="dropdown-link">
-          <button class="dropdown-link dropdown-item-btn" id="my-identity">
-            Identity
-          </button>
+          <button class="dropdown-item-btn" id="my-identity">Identity</button>
         </li>
         <hr class="line" />
         <li class="dropdown-link">
-          <button class="dropdown-link dropdown-item-btn" id="signout-option">
+          <button class="dropdown-item-btn" id="signout-option">
             Sign out
           </button>
         </li>
       </ul>
     </div>
+
     <div class="first-screen">
-      <header>
-        <div class="hamburger">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-
-        <nav class="main-nav">
-          <ul class="nav-menu">
-            <li>
-              <a href="https://www.realdevsquad.com/" class="logo-link">
-                <img
-                  class="rds-logo"
-                  src="img/logos/RDS-logo.png"
-                  alt="RDS_Logo"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                class="home-tab nav-element"
-                href="https://www.realdevsquad.com/"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                class="nav-element active-tab"
-                href="https://welcome.realdevsquad.com/"
-              >
-                Welcome
-              </a>
-            </li>
-            <li>
-              <a
-                class="nav-element"
-                href="https://www.realdevsquad.com/events.html"
-              >
-                Events
-              </a>
-            </li>
-            <li>
-              <a class="nav-element" href="https://members.realdevsquad.com/">
-                Members
-              </a>
-            </li>
-            <!-- TODO : uncomment when crypto page is added -->
-            <!-- <li>
-              <a class="nav-element" href="https://crypto.realdevsquad.com/">
-                Crypto
-              </a>
-            </li> -->
-            <li>
-              <a class="nav-element" href="https://status.realdevsquad.com/">
-                Status
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="nav-login-li">
-          <div class="nav-login">
-            <a
-              class="btn-login"
-              href="https://github.com/login/oauth/authorize?client_id=23c78f66ab7964e5ef97"
-            >
-              <div class="skeleton-holder">
-                <div class="skeleton-rectangle" id="skeleton-rectangle"></div>
-                <div class="skeleton-circle" id="skeleton-circle"></div>
-              </div>
-              <button class="btn-login-text hidden">
-                Sign In With GitHub
-                <img
-                  src="img/icons/github-logo.png"
-                  alt="GitHub Icon"
-                  height="15px"
-                  width="15px"
-                />
-              </button>
-            </a>
-            <div class="user-greet">
-              <div class="user-greet-msg">Hello, User!</div>
-              <img class="user-profile-pic" />
-            </div>
-          </div>
-        </div>
-      </header>
-
       <img
         class="rds-logo-banner"
         src="img/logos/RDS-logo-2x.png"
@@ -171,9 +155,7 @@
             <span class="welcome">Welcome</span>
             <span class="to-the">to the</span>
           </h2>
-          <h1>
-            <span>Real Dev Squad</span>
-          </h1>
+          <h1><span>Real Dev Squad</span></h1>
           <div class="handles-container">
             <a
               href="https://www.linkedin.com/company/real-dev-squad/"
@@ -188,10 +170,7 @@
                 alt="LinkedIn_Logo"
               />
             </a>
-
             <span class="link-seperators">&vert;</span>
-            <span class="seperators">&bull;</span>
-
             <a
               href="https://twitter.com/realdevsquad?lang=en"
               target="_blank"
@@ -205,10 +184,7 @@
                 alt="Twitter_Logo"
               />
             </a>
-
             <span class="link-seperators">&vert;</span>
-            <span class="seperators">&bull;</span>
-
             <a
               href="https://www.facebook.com/Real-Dev-Squad-108713777585062/"
               target="_blank"
@@ -222,10 +198,7 @@
                 alt="Facebook_Logo"
               />
             </a>
-
             <span class="link-seperators">&vert;</span>
-            <span class="seperators">&bull;</span>
-
             <a
               href="https://www.instagram.com/realdevsquad/?hl=en"
               target="_blank"
@@ -269,13 +242,11 @@
 
     <div class="second-screen">
       <p class="docs-heading">Check Out Our Docs</p>
-
       <div class="cards">
         <a class="card" href="./faq.html">FAQ</a>
         <a class="card" href="./discord.html">Discord</a>
         <a class="card" href="./code-of-conduct.html">Code of Conduct</a>
       </div>
-
       <div class="info-note-section">
         <span class="info-note">
           Ready to level up your dev skills?
@@ -300,15 +271,9 @@
     <div align="center" class="last-screen">
       <section class="event-screen">
         <h1 class="event-heading">You can check out all our events below!!</h1>
-        <div class="upcoming-event">
-          <h3>Upcoming Events:</h3>
-        </div>
+        <div class="upcoming-event"><h3>Upcoming Events:</h3></div>
         <div class="stay-tune-text">Stay tuned!</div>
-
-        <div class="previous-event">
-          <h3>Previous Events:</h3>
-        </div>
-
+        <div class="previous-event"><h3>Previous Events:</h3></div>
         <div class="events-box">
           <a
             class="events"
@@ -316,69 +281,41 @@
             href="https://www.realdevsquad.com/event-apis-made-easier-april-2021"
             >APIs made Easier</a
           >
-
-          &nbsp;
-          <span class="link-seperators">&vert;</span>
-          <span class="seperators">&bull;</span>
-          &nbsp;
-
+          &nbsp;|&nbsp;
           <a
             class="events"
             target="_blank"
             href="https://www.realdevsquad.com/event-dynamic-programming-october-2020.html"
             >Dynamic Programming</a
           >
-
-          &nbsp;
-          <span class="link-seperators">&vert;</span>
-          <span class="seperators">&bull;</span>
-          &nbsp;
-
+          &nbsp;|&nbsp;
           <a
             class="events"
             target="_blank"
             href="https://www.realdevsquad.com/event-nodejs-workshop-october-2020.html"
+            >NodeJS Workshop Part1</a
           >
-            NodeJS Workshop Part1
-          </a>
-
-          &nbsp;
-          <span class="link-seperators">&vert;</span>
-          <span class="seperators">&bull;</span>
-          &nbsp;
-
+          &nbsp;|&nbsp;
           <a
             class="events"
             target="_blank"
             href="https://www.realdevsquad.com/event-web-mini-conf-july-2020.html"
             >Web-Mini-Conf-July-2020</a
           >
-
-          &nbsp;
-          <span class="link-seperators">&vert;</span>
-          <span class="seperators">&bull;</span>
-          &nbsp;
-
+          &nbsp;|&nbsp;
           <a
             class="events"
             target="_blank"
             href="https://www.realdevsquad.com/event-react-hooks-july-2020.html"
+            >React Hooks Session</a
           >
-            React Hooks Session
-          </a>
-
-          &nbsp;
-          <span class="link-seperators">&vert;</span>
-          <span class="seperators">&bull;</span>
-          &nbsp;
-
+          &nbsp;|&nbsp;
           <a
             class="events"
             target="_blank"
             href="https://www.realdevsquad.com/event-ssr-correctly-august-2020.html"
+            >SSR the right way</a
           >
-            SSR the right way
-          </a>
         </div>
       </section>
 
@@ -388,10 +325,8 @@
           <iframe
             src="https://www.youtube.com/embed/8UPjK1wLnTk?controls=0"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          >
-          </iframe>
+          ></iframe>
         </div>
       </div>
 
