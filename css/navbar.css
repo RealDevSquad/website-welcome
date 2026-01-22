@@ -12,6 +12,9 @@
 nav {
   font-family: 'roboto';
   font-weight: 700;
+  position: fixed;
+  background-color: #1d1283;
+  width: 100%;
 }
 
 .nav-menu {
