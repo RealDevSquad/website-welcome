@@ -1,6 +1,9 @@
 const faqLinks = document.querySelectorAll('.faq_link');
 const currentLocation = window.location.hash;
 
+
+
+
 // to open accordian by pressing spacebar
 window.addEventListener('keydown', (e) => {
   const ancTag = document.querySelector(
@@ -11,6 +14,41 @@ window.addEventListener('keydown', (e) => {
     ancTag?.click();
   }
 });
+
+
+// JavaScript (faq.js)
+
+// JavaScript (faq.js)
+
+// Function to smoothly scroll to the top of the page when the button is clicked
+document.getElementById('scrollUpButton').addEventListener('click', function () {
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
+});
+
+// Show the scroll-up button when the user scrolls down the page
+window.addEventListener('scroll', function () {
+  var scrollButton = document.getElementById('scrollUpButton');
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollButton.style.display = 'block';
+  } else {
+      scrollButton.style.display = 'none';
+  }
+});
+
+
+// Initially hide the button when the page loads
+document.addEventListener('DOMContentLoaded', function () {
+  var scrollButton = document.getElementById('scrollUpButton');
+  scrollButton.style.display = 'none';
+});
+
+
+
+
+
 
 // for adding tabindex=-1 to other faqlinks so that others faqlinks can't be accessed by tab
 const removeFocusForOthers = (target) => {
